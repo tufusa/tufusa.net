@@ -1,16 +1,18 @@
 ---
-
+import IndexLayout from "../layouts/IndexLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<IndexLayout>
+  <div
+    class="bg-back flex min-h-screen
+      flex-col items-center
+      justify-center text-white"
+  >
+    <p class="font-poiret-one text-6xl">tufusa.net</p>
+    <div class="font-urbanist text-main flex flex-row gap-6 p-6 text-2xl">
+      <a href="/profile">profile</a>
+      <a href="/1F6A7">gallery</a>
+      <a href="/1F6A7">note</a>
+    </div>
+  </div>
+</IndexLayout>

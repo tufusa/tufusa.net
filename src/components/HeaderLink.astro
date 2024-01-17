@@ -1,0 +1,11 @@
+---
+export interface Props {
+  to: string;
+}
+
+const { to } = Astro.props;
+---
+
+<a href={to} class="font-urbanist text-xl decoration-from-font">
+  <slot />
+</a>
