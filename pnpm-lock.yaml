@@ -11,12 +11,6 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.1.3)(tailwindcss@3.4.1)
-  '@fontsource/poiret-one':
-    specifier: ^5.0.18
-    version: 5.0.18
-  '@fontsource/urbanist':
-    specifier: ^5.0.18
-    version: 5.0.18
   astro:
     specifier: ^4.1.3
     version: 4.1.3(typescript@5.3.3)
@@ -608,14 +602,6 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
-
-  /@fontsource/poiret-one@5.0.18:
-    resolution: {integrity: sha512-7LsyyuLv2UZ0qq6s0I+1eDlEr9f1STX2XQBpE5brEArhbX/eeCkjJtwsJViEveLaeUhIOeY1Mbjvc3y6j40Y3w==}
-    dev: false
-
-  /@fontsource/urbanist@5.0.18:
-    resolution: {integrity: sha512-jljGSpFGWyl2WAgDK5l+rpQ7RxTQ1rTLmIk/pQ/PdZSqGe4E027qSz5qwrqjpH/te0TvIZLXbfhUV7I2wwnzBQ==}
-    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
