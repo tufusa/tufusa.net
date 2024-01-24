@@ -1,0 +1,15 @@
+---
+export interface Props {
+  title: string;
+  content?: string;
+}
+
+const { title, content } = Astro.props;
+---
+
+<div class="before:mr-1
+    before:font-normal
+    before:text-main
+    before:content-['-']">
+  {title}{content && <span class="text-gray-400">……</span>}{content}
+</div>

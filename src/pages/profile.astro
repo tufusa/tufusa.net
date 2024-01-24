@@ -1,8 +1,58 @@
 ---
-import UnderConstruction from '../components/UnderConstruction.astro';
 import MainLayout from '../layouts/MainLayout.astro';
+import icon from '../assets/icon.svg';
+import ProfileContent from '../components/ProfileContent.astro';
+import ProfileListItem from '../components/ProfileListItem.astro';
+import ProfileLink from '../components/ProfileLink.astro';
 ---
 
 <MainLayout>
-  <UnderConstruction />
+  <main class="mt-8 flex w-4/5 max-w-xl flex-1 flex-col gap-10">
+    <div class="mx-8 flex h-fit w-full flex-wrap items-center gap-8 divide-x-2 divide-main">
+      <img
+        src={icon.src}
+        alt="icon"
+        class="aspect-square h-36 rounded-full border border-slate-600"
+      />
+      <div class="mb-2 inline-flex flex-col pl-2">
+        <p class="font-urbanist text-5xl lg:text-6xl">tufusa</p>
+        <p class="font-serif text-lg text-gray-400 lg:text-xl">[t͡sɯ̹̽ɸɯ̹̽sä]</p>
+      </div>
+    </div>
+    <ProfileContent title="">tufusaです。いろんなことをしています。</ProfileContent>
+    <ProfileContent title="Like">
+      <ProfileListItem title="数学" />
+      <ProfileListItem title="開発" />
+      <ProfileListItem title="競プロ" />
+      <ProfileListItem title="謎解き" />
+      <ProfileListItem title="ゲーム" />
+    </ProfileContent>
+    <ProfileContent title="Tech">
+      <ProfileListItem title="[Lang] Ruby" />
+      <ProfileListItem title="[Lang] TypeScript" />
+      <ProfileListItem title="[Lang] C#" />
+      <ProfileListItem title="[Library] React" content="アプリ開発×複数回" />
+      <ProfileListItem title="[Framework] Remix" content="アプリ開発×数回" />
+      <ProfileListItem title="[Framework] Astro" content="このサイトはAstroで書かれています。" />
+    </ProfileContent>
+    <ProfileContent title="Belong">
+      <ProfileListItem title="Poporon Network" />
+    </ProfileContent>
+    <ProfileContent title="Links">
+      <ProfileLink icon="mdi:twitter" text="@louptung" to="https://twitter.com/louptung" />
+      <ProfileLink icon="mdi:github" text="@tufusa" to="https://github.com/tufusa" />
+      <ProfileLink icon="mdi:email" text="me[at]tufusa.net" />
+      <ProfileLink
+        icon="mdi:horse-variant-fast"
+        text="AtCoder/tufusa"
+        to="https://atcoder.jp/users/tufusa"
+      />
+      <ProfileLink
+        icon="mdi:sigma"
+        text="OnlineMathContest/tufusa"
+        to="https://onlinemathcontest.com/users/tufusa"
+      />
+    </ProfileContent>
+    <!-- <ProfileContent title="History" /> -->
+  </main>
 </MainLayout>
