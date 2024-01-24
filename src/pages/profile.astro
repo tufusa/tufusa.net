@@ -39,19 +39,21 @@ import ProfileLink from '../components/ProfileLink.astro';
       <ProfileListItem title="Poporon Network" />
     </ProfileContent>
     <ProfileContent title="Links">
-      <ProfileLink icon="mdi:twitter" text="@louptung" to="https://twitter.com/louptung" />
-      <ProfileLink icon="mdi:github" text="@tufusa" to="https://github.com/tufusa" />
-      <ProfileLink icon="mdi:email" text="me[at]tufusa.net" />
-      <ProfileLink
-        icon="mdi:horse-variant-fast"
-        text="AtCoder/tufusa"
-        to="https://atcoder.jp/users/tufusa"
-      />
-      <ProfileLink
-        icon="mdi:sigma"
-        text="OnlineMathContest/tufusa"
-        to="https://onlinemathcontest.com/users/tufusa"
-      />
+      <div class="flex flex-col gap-2">
+        <ProfileLink icon="mdi:twitter" text="@louptung" to="https://twitter.com/louptung" />
+        <ProfileLink icon="mdi:github" text="@tufusa" to="https://github.com/tufusa" />
+        <ProfileLink icon="mdi:email" text="me[at]tufusa.net" />
+        <ProfileLink
+          icon="mdi:horse-variant-fast"
+          text="AtCoder/tufusa"
+          to="https://atcoder.jp/users/tufusa"
+        />
+        <ProfileLink
+          icon="mdi:sigma"
+          text="OnlineMathContest/tufusa"
+          to="https://onlinemathcontest.com/users/tufusa"
+        />
+      </div>
     </ProfileContent>
     <!-- <ProfileContent title="History" /> -->
   </main>
