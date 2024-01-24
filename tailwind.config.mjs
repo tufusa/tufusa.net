@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  theme: {
     extend: {
       colors: {
         main: '#FF67A5',
-        back: '#10101f',
+        back: '#121222',
       },
       fontFamily: {
         sans: [
@@ -31,4 +31,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
