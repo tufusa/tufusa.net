@@ -1,0 +1,13 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout>
+  <main class="flex w-full flex-1 flex-col items-center justify-center">
+    <div class="font-poiret-one text-9xl lg:text-[10rem] ">404</div>
+    <div class="text font-urbanist text-2xl lg:text-3xl">
+      Not found:
+      <span class="text-main">{Astro.url.pathname}</span>
+    </div>
+  </main>
+</MainLayout>
