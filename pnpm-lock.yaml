@@ -13,13 +13,13 @@ importers:
         version: 0.4.1(prettier-plugin-astro@0.12.3)(prettier@3.2.5)(typescript@5.3.3)
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.1.3(@types/node@20.11.5)(typescript@5.3.3))(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.1.3(@types/node@20.12.8)(typescript@5.3.3))(tailwindcss@3.4.3)
       astro:
         specifier: ^4.1.3
-        version: 4.1.3(@types/node@20.11.5)(typescript@5.3.3)
+        version: 4.1.3(@types/node@20.12.8)(typescript@5.3.3)
       astro-icon:
         specifier: ^1.0.2
-        version: 1.0.2
+        version: 1.1.0
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.3
@@ -363,8 +363,8 @@ packages:
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
-  '@iconify/utils@2.1.16':
-    resolution: {integrity: sha512-2q2POA+bg1iKFMT3ZAeS8+Lo2PcbTXH2QKdQ9XwxSyCUg+XHA0ZW7mBoW8v0cU/SgitnM2OheEouPw7mRwY+Bg==}
+  '@iconify/utils@2.1.23':
+    resolution: {integrity: sha512-YGNbHKM5tyDvdWZ92y2mIkrfvm5Fvhe6WJSkWu7vvOFhMtYDP0casZpoRz0XEHZCrYsR4stdGT3cZ52yp5qZdQ==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -521,11 +521,11 @@ packages:
   '@types/nlcst@1.0.4':
     resolution: {integrity: sha512-ABoYdNQ/kBSsLvZAekMhIPMQ3YUZvavStpKYs7BjLLuKVmIMA0LUgZ7b54zzuWJRbHF80v1cNf4r90Vd6eMQDg==}
 
-  '@types/node@20.11.5':
-    resolution: {integrity: sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==}
+  '@types/node@20.12.8':
+    resolution: {integrity: sha512-NU0rJLJnshZWdE/097cdCBbyW1h4hEg0xpovcoAQYHl8dnEyp/NAOiE45pvc+Bd1Dt+2r94v2eGFpQJ4R7g+2w==}
 
-  '@types/tar@6.1.10':
-    resolution: {integrity: sha512-60ZO+W0tRKJ3ggdzJKp75xKVlNogKYMqGvr2bMH/+k3T0BagfYTnbmVDFMJB1BFttz6yRgP5MDGP27eh7brrqw==}
+  '@types/tar@6.1.13':
+    resolution: {integrity: sha512-IznnlmU5f4WcGTh2ltRu/Ijpmk8wiWXfF0VA4s+HPjHZgvFggk1YaIkbo5krX/zUCzWF8N/l4+W/LNxnvAJ8nw==}
 
   '@types/unist@2.0.10':
     resolution: {integrity: sha512-IfYcSBWE3hLpBg8+X2SEa8LVkJdJEkT2Ese2aaLs3ptGdVtABxndrMaxuFlQ1qdFf9Q5rDvDpxI3WwgvKFAsQA==}
@@ -615,8 +615,8 @@ packages:
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
-  astro-icon@1.0.2:
-    resolution: {integrity: sha512-MGgnjxHnI50bBWasBdt0pw/S9lWharfxhUv1sP2Vj1/KDaT/Cz35ZdlBgb4DKtfzQZREIJN2eQGqmVbvLq5p3w==}
+  astro-icon@1.1.0:
+    resolution: {integrity: sha512-Nksc09p7UuHeMcPNS9w1pKqRw3+wEmmh0A3FJW+FNXvqaeWI4RLvD1MCWErpY3Z5Cvad317rvLdik/Hg8GEk8Q==}
 
   astro@4.1.3:
     resolution: {integrity: sha512-9i8l0mEnpAOAi9F3DMkHGaZ4q56TGtt71XaAxhPXAlhZrVR/6ruobCyYdYwL1Fo0ATpuGXdaod1I7FFxFMcQbw==}
@@ -800,6 +800,9 @@ packages:
 
   common-ancestor-path@1.0.1:
     resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
+
+  confbox@0.1.7:
+    resolution: {integrity: sha512-uJcB/FKZtBMCJpK8MQji6bJHgu1tixKPxRLeGkNzBoOZzpnZUJm0jm2/sBDWcuBx1dYgxV4JU+g5hmNxCyAmdA==}
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -1310,6 +1313,10 @@ packages:
     resolution: {integrity: sha512-SFppqq5p42fe2qcZQqqEOiVRXl+WCP1MdT6k7BDEW1j++sp5fIY+/fdRQitvKgB5BrBcmrs5m/L0v2FrU5MY1g==}
     engines: {node: '>=14'}
 
+  local-pkg@0.5.0:
+    resolution: {integrity: sha512-ok6z3qlYyCDS4ZEU27HaU6x/xZa9Whf8jD4ptH5UZTQYZVYeb9bnZ3ojVhiJNLiXK1Hfc0GNbLXcmZ5plLDDBg==}
+    engines: {node: '>=14'}
+
   locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
     engines: {node: '>=8'}
@@ -1538,6 +1545,9 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  mlly@1.7.0:
+    resolution: {integrity: sha512-U9SDaXGEREBYQgfejV97coK0UL1r+qnF2SyO9A3qcI8MzKnsIFKHNVEkrDyNncQTKQQumsasmeq84eNMdBfsNQ==}
+
   ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
 
@@ -1715,6 +1725,9 @@ packages:
   pkg-dir@4.2.0:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
     engines: {node: '>=8'}
+
+  pkg-types@1.1.0:
+    resolution: {integrity: sha512-/RpmvKdxKf8uILTtoOhAgf30wYbP2Qw+L9p3Rvshx1JZVX+XQNZQFjlbmGHEGIm4CkVPlSn+NXmIM8+9oWQaSA==}
 
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
@@ -2114,8 +2127,8 @@ packages:
   tar-stream@3.1.6:
     resolution: {integrity: sha512-B/UyjYwPpMBv+PaFSWAmtYjwdrlEaZQEhMIBFNC5oEG8lpiW8XjcSdmEaClj28ArfKScKHs2nshz3k2le6crsg==}
 
-  tar@6.2.0:
-    resolution: {integrity: sha512-/Wo7DcT0u5HUV486xg675HtjNd3BXZ6xDbzsCUZPt5iw8bTQ63bP0Raut3mvro9u+CUyq7YQd8Cx55fsZXxqLQ==}
+  tar@6.2.1:
+    resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
 
   thenify-all@1.6.0:
@@ -2169,6 +2182,9 @@ packages:
     resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  ufo@1.5.3:
+    resolution: {integrity: sha512-Y7HYmWaFwPUmkoQCUIAYpKqkOf+SbVj/2fJJZ4RJMCfZp0rTGwRbzQD+HghfnhKOjL9E01okqz+ncJskGYfBNw==}
 
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
@@ -2517,9 +2533,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.1.3(@types/node@20.11.5)(typescript@5.3.3))(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.1.3(@types/node@20.12.8)(typescript@5.3.3))(tailwindcss@3.4.3)':
     dependencies:
-      astro: 4.1.3(@types/node@20.11.5)(typescript@5.3.3)
+      astro: 4.1.3(@types/node@20.12.8)(typescript@5.3.3)
       autoprefixer: 10.4.16(postcss@8.4.33)
       postcss: 8.4.33
       postcss-load-config: 4.0.2(postcss@8.4.33)
@@ -2770,28 +2786,29 @@ snapshots:
   '@iconify/tools@3.0.7':
     dependencies:
       '@iconify/types': 2.0.0
-      '@iconify/utils': 2.1.16
+      '@iconify/utils': 2.1.23
       '@types/cheerio': 0.22.35
-      '@types/tar': 6.1.10
+      '@types/tar': 6.1.13
       cheerio: 1.0.0-rc.12
       extract-zip: 2.0.1
       local-pkg: 0.4.3
       pathe: 1.1.2
       svgo: 3.0.3
-      tar: 6.2.0
+      tar: 6.2.1
     transitivePeerDependencies:
       - supports-color
 
   '@iconify/types@2.0.0': {}
 
-  '@iconify/utils@2.1.16':
+  '@iconify/utils@2.1.23':
     dependencies:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.7.7
       '@iconify/types': 2.0.0
       debug: 4.3.4
       kolorist: 1.8.0
-      local-pkg: 0.4.3
+      local-pkg: 0.5.0
+      mlly: 1.7.0
     transitivePeerDependencies:
       - supports-color
 
@@ -2915,7 +2932,7 @@ snapshots:
 
   '@types/cheerio@0.22.35':
     dependencies:
-      '@types/node': 20.11.5
+      '@types/node': 20.12.8
 
   '@types/debug@4.1.12':
     dependencies:
@@ -2937,13 +2954,13 @@ snapshots:
     dependencies:
       '@types/unist': 2.0.10
 
-  '@types/node@20.11.5':
+  '@types/node@20.12.8':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/tar@6.1.10':
+  '@types/tar@6.1.13':
     dependencies:
-      '@types/node': 20.11.5
+      '@types/node': 20.12.8
       minipass: 4.2.8
 
   '@types/unist@2.0.10': {}
@@ -2952,7 +2969,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 20.11.5
+      '@types/node': 20.12.8
     optional: true
 
   '@ungap/structured-clone@1.2.0': {}
@@ -3050,15 +3067,15 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro-icon@1.0.2:
+  astro-icon@1.1.0:
     dependencies:
       '@iconify/tools': 3.0.7
       '@iconify/types': 2.0.0
-      '@iconify/utils': 2.1.16
+      '@iconify/utils': 2.1.23
     transitivePeerDependencies:
       - supports-color
 
-  astro@4.1.3(@types/node@20.11.5)(typescript@5.3.3):
+  astro@4.1.3(@types/node@20.12.8)(typescript@5.3.3):
     dependencies:
       '@astrojs/compiler': 2.4.2
       '@astrojs/internal-helpers': 0.2.1
@@ -3118,8 +3135,8 @@ snapshots:
       tsconfck: 3.0.1(typescript@5.3.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.0.11(@types/node@20.11.5)
-      vitefu: 0.2.5(vite@5.0.11(@types/node@20.11.5))
+      vite: 5.0.11(@types/node@20.12.8)
+      vitefu: 0.2.5(vite@5.0.11(@types/node@20.12.8))
       which-pm: 2.1.1
       yargs-parser: 21.1.1
       zod: 3.22.4
@@ -3338,6 +3355,8 @@ snapshots:
   commander@7.2.0: {}
 
   common-ancestor-path@1.0.1: {}
+
+  confbox@0.1.7: {}
 
   convert-source-map@2.0.0: {}
 
@@ -3859,6 +3878,11 @@ snapshots:
 
   local-pkg@0.4.3: {}
 
+  local-pkg@0.5.0:
+    dependencies:
+      mlly: 1.7.0
+      pkg-types: 1.1.0
+
   locate-path@5.0.0:
     dependencies:
       p-locate: 4.1.0
@@ -4250,6 +4274,13 @@ snapshots:
 
   mkdirp@1.0.4: {}
 
+  mlly@1.7.0:
+    dependencies:
+      acorn: 8.11.3
+      pathe: 1.1.2
+      pkg-types: 1.1.0
+      ufo: 1.5.3
+
   ms@2.0.0: {}
 
   ms@2.1.2: {}
@@ -4413,6 +4444,12 @@ snapshots:
   pkg-dir@4.2.0:
     dependencies:
       find-up: 4.1.0
+
+  pkg-types@1.1.0:
+    dependencies:
+      confbox: 0.1.7
+      mlly: 1.7.0
+      pathe: 1.1.2
 
   postcss-import@15.1.0(postcss@8.4.38):
     dependencies:
@@ -4913,7 +4950,7 @@ snapshots:
       streamx: 2.15.6
     optional: true
 
-  tar@6.2.0:
+  tar@6.2.1:
     dependencies:
       chownr: 2.0.0
       fs-minipass: 2.1.0
@@ -4960,6 +4997,8 @@ snapshots:
       semver: 7.5.4
 
   typescript@5.3.3: {}
+
+  ufo@1.5.3: {}
 
   undici-types@5.26.5: {}
 
@@ -5072,18 +5111,18 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite@5.0.11(@types/node@20.11.5):
+  vite@5.0.11(@types/node@20.12.8):
     dependencies:
       esbuild: 0.19.11
       postcss: 8.4.33
       rollup: 4.9.5
     optionalDependencies:
-      '@types/node': 20.11.5
+      '@types/node': 20.12.8
       fsevents: 2.3.3
 
-  vitefu@0.2.5(vite@5.0.11(@types/node@20.11.5)):
+  vitefu@0.2.5(vite@5.0.11(@types/node@20.12.8)):
     optionalDependencies:
-      vite: 5.0.11(@types/node@20.11.5)
+      vite: 5.0.11(@types/node@20.12.8)
 
   volar-service-css@0.0.17(@volar/language-service@1.11.1):
     dependencies:
