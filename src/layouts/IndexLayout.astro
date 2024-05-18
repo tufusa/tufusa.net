@@ -1,5 +1,5 @@
 ---
-import BasebLayout from './BaseLayout.astro';
+import BaseLayout from './BaseLayout.astro';
 import favicon from '../../public/favicon.svg';
 
 export interface Props {
@@ -11,6 +11,6 @@ export interface Props {
 const { title, description, image } = Astro.props;
 ---
 
-<BasebLayout title={title} description={description} image={image ?? favicon.src}>
+<BaseLayout title={title} description={description} image={image ?? favicon.src}>
   <slot />
-</BasebLayout>
+</BaseLayout>
