@@ -1,4 +1,6 @@
 ---
+import '../assets/index.css';
+
 export interface Props {
   title: string;
   description: string;
@@ -23,14 +25,8 @@ const { title, description, image } = Astro.props;
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(image ?? '/favicon.png', Astro.url)} />
     <meta name="twitter:card" content="summary" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Urbanist:wght@300&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body class="flex min-h-screen flex-col items-center bg-back text-white">
+  <body class="flex min-h-screen flex-col items-center bg-back font-sans text-white">
     <slot />
   </body>
 </html>
