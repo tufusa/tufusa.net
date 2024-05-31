@@ -18,6 +18,7 @@ export default {
       },
       fontFamily: {
         sans: [
+          'Route159',
           '"Noto Sans JP"',
           'ui-sans-serif',
           'system-ui',
