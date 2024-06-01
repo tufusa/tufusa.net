@@ -8,22 +8,17 @@ export default {
         back: '#121222',
       },
       height: {
-        screen: [
-          '100vh', '100dvh'
-        ]
+        screen: ['100vh', '100dvh'],
       },
       minHeight: {
-        screen: [
-          '100vh', '100dvh'
-        ]
+        screen: ['100vh', '100dvh'],
       },
       maxHeight: {
-        screen: [
-          '100vh', '100dvh'
-        ]
+        screen: ['100vh', '100dvh'],
       },
       fontFamily: {
         sans: [
+          'Route159',
           '"Noto Sans JP"',
           'ui-sans-serif',
           'system-ui',
