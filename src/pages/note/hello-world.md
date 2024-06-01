@@ -20,11 +20,8 @@ MDXもサポートしているので、今後そちらに移行するかもし�
 
 ## スタイリング
 
-0からスタイリングするのが好きなので楽しい。  
-一応[作ったクラス](#作ったクラス)を最後に載せておきます。  
-
-<br>
-
+私のTailwindが火を噴くぜ。
+0からスタイリングするのが好きなので楽しかった。  
 主な要素を列挙してみます。
 
 # H1
@@ -66,10 +63,12 @@ console.log("this is a code block.");
 |   1-1   |   1-2   |   1-3   |
 |   2-1   |   2-2   |   2-3   |
 
-## 作ったクラス
+## 作ったスタイル
+
+最後に作成したTailwind CSSのスタイルを掲載して終わります。
 
 ```
-text-sm text-gray-200 lg:text-base
+text-base text-gray-200
 [&>h1]:mb-1 [&>h1]:mt-6 [&>h1]:w-full [&>h1]:text-3xl [&>h1]:font-bold [&>h1]:text-white lg:[&>h1]:text-4xl
 [&>h2]:mb-1 [&>h2]:mt-6 [&>h2]:w-full [&>h2]:text-xl [&>h2]:font-bold [&>h2]:text-main lg:[&>h2]:text-2xl
 [&>h3]:mb-1 [&>h3]:mt-6 [&>h3]:w-full [&>h3]:text-lg [&>h3]:font-bold [&>h3]:text-white lg:[&>h3]:text-xl
