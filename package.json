@@ -22,6 +22,6 @@
     "@iconify-json/mdi": "^1.1.64",
     "prettier": "^3.2.3",
     "prettier-plugin-astro": "^0.14.0",
-    "prettier-plugin-tailwindcss": "^0.5.11"
+    "prettier-plugin-tailwindcss": "^0.6.0"
   }
 }
