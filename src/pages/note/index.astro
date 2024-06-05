@@ -16,7 +16,6 @@ const notes = await Astro.glob<Frontmatter>('./*.md');
       {
         notes
           .sort((note) => -Date.parse(note.frontmatter.date))
-          .reverse()
           .map((note) => (
             <div class="flex gap-2">
               <span class="text-slate-500">{note.frontmatter.date}</span>
