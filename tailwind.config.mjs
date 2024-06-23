@@ -37,6 +37,7 @@ export default {
         ],
         'poiret-one': ['"Poiret One"', 'sans-serif'],
         urbanist: ['Urbanist', 'sans-serif'],
+        'shippori-mincho': ['"Shippori Mincho"', 'sans-serif'],
       },
     },
   },
