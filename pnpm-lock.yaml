@@ -16,10 +16,10 @@ importers:
         version: 3.6.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.1(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1))
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.10.3(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5))(tailwindcss@3.4.4)
+        version: 5.1.0(astro@4.11.0(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5))(tailwindcss@3.4.4)
       astro:
         specifier: ^4.10.2
-        version: 4.10.3(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5)
+        version: 4.11.0(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5)
       astro-icon:
         specifier: ^1.1.0
         version: 1.1.0
@@ -654,8 +654,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@shikijs/core@1.7.0':
-    resolution: {integrity: sha512-O6j27b7dGmJbR3mjwh/aHH8Ld+GQvA0OQsNO43wKWnqbAae3AYXrhFyScHGX8hXZD6vX2ngjzDFkZY5srtIJbQ==}
+  '@shikijs/core@1.9.0':
+    resolution: {integrity: sha512-cbSoY8P/jgGByG8UOl3jnP/CWg/Qk+1q+eAKWtcrU3pNoILF8wTsLB0jT44qUBV8Ce1SvA9uqcM9Xf+u3fJFBw==}
 
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -818,8 +818,8 @@ packages:
   astro-icon@1.1.0:
     resolution: {integrity: sha512-Nksc09p7UuHeMcPNS9w1pKqRw3+wEmmh0A3FJW+FNXvqaeWI4RLvD1MCWErpY3Z5Cvad317rvLdik/Hg8GEk8Q==}
 
-  astro@4.10.3:
-    resolution: {integrity: sha512-TWCJM+Vg+y0UoEz/H75rfp/u2N8yxeQQ2UrU9+fMcbjlzQJtGGDq3ApdundqPZgAuCryRuJnrKytStMZCFnlvQ==}
+  astro@4.11.0:
+    resolution: {integrity: sha512-3VWxz/08sChQIX68tuE7Y769DUdjsT3Zq2/y4SkrDRlwN9IZ/aebwcRWr5a2yMSdO2vpFxtEdobq0mKnMlLErg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1092,8 +1092,8 @@ packages:
   electron-to-chromium@1.4.633:
     resolution: {integrity: sha512-7BvxzXrHFliyQ1oZc6NRMjyEaKOO1Ma1NY98sFZofogWlm+klLWSgrDw7EhatiMgi4R4NV+iWxDdxuIKXtPbOw==}
 
-  electron-to-chromium@1.4.807:
-    resolution: {integrity: sha512-kSmJl2ZwhNf/bcIuCH/imtNOKlpkLDn2jqT5FJ+/0CXjhnFaOa9cOe9gHKKy71eM49izwuQjZhKk+lWQ1JxB7A==}
+  electron-to-chromium@1.4.810:
+    resolution: {integrity: sha512-Kaxhu4T7SJGpRQx99tq216gCq2nMxJo+uuT6uzz9l8TVN2stL7M06MIIXAtr9jsrLs2Glflgf2vMQRepxawOdQ==}
 
   emmet@2.4.6:
     resolution: {integrity: sha512-dJfbdY/hfeTyf/Ef7Y7ubLYzkBvPQ912wPaeVYpAxvFxkEBf/+hJu4H6vhAvFN6HlxqedlfVn2x1S44FfQ97pg==}
@@ -1336,8 +1336,9 @@ packages:
     resolution: {integrity: sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==}
     engines: {node: '>=4'}
 
-  is-core-module@2.13.1:
-    resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
+  is-core-module@2.14.0:
+    resolution: {integrity: sha512-a5dFJih5ZLYlRtDc0dZWP7RiKr6xIKzmn/oAYCDvdLThadVgyJwlaoQPmRtMSpz+rk0OGAgIu+TcM9HUF0fk1A==}
+    engines: {node: '>= 0.4'}
 
   is-docker@3.0.0:
     resolution: {integrity: sha512-eljcgEDlEns/7AXFosB5K/2nCM4P7FQPkGc/DWLy5rmFEWvZayGrik1d9/QIY5nJ4f9YsVvBkA6kJpHn9rISdQ==}
@@ -2155,8 +2156,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shiki@1.7.0:
-    resolution: {integrity: sha512-H5pMn4JA7ayx8H0qOz1k2qANq6mZVCMl1gKLK6kWIrv1s2Ial4EmD4s4jE8QB5Dw03d/oCQUxc24sotuyR5byA==}
+  shiki@1.9.0:
+    resolution: {integrity: sha512-i6//Lqgn7+7nZA0qVjoYH0085YdNk4MC+tJV4bo+HgjgRMJ0JmkLZzFAuvVioJqLkcGDK5GAMpghZEZkCnwxpQ==}
 
   signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
@@ -2680,7 +2681,7 @@ snapshots:
       remark-parse: 11.0.0
       remark-rehype: 11.1.0
       remark-smartypants: 2.1.0
-      shiki: 1.7.0
+      shiki: 1.9.0
       unified: 11.0.5
       unist-util-remove-position: 5.0.0
       unist-util-visit: 5.0.0
@@ -2705,9 +2706,9 @@ snapshots:
       - supports-color
       - vite
 
-  '@astrojs/tailwind@5.1.0(astro@4.10.3(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5))(tailwindcss@3.4.4)':
+  '@astrojs/tailwind@5.1.0(astro@4.11.0(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5))(tailwindcss@3.4.4)':
     dependencies:
-      astro: 4.10.3(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5)
+      astro: 4.11.0(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5)
       autoprefixer: 10.4.16(postcss@8.4.33)
       postcss: 8.4.33
       postcss-load-config: 4.0.2(postcss@8.4.33)
@@ -3199,7 +3200,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.18.0':
     optional: true
 
-  '@shikijs/core@1.7.0': {}
+  '@shikijs/core@1.9.0': {}
 
   '@trysound/sax@0.2.0': {}
 
@@ -3406,7 +3407,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@4.10.3(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5):
+  astro@4.11.0(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
@@ -3459,7 +3460,7 @@ snapshots:
       rehype: 13.0.1
       resolve: 1.22.8
       semver: 7.6.2
-      shiki: 1.7.0
+      shiki: 1.9.0
       string-width: 7.1.0
       strip-ansi: 7.1.0
       tsconfck: 3.1.0(typescript@5.4.5)
@@ -3537,7 +3538,7 @@ snapshots:
   browserslist@4.23.1:
     dependencies:
       caniuse-lite: 1.0.30001636
-      electron-to-chromium: 1.4.807
+      electron-to-chromium: 1.4.810
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.1)
 
@@ -3750,7 +3751,7 @@ snapshots:
 
   electron-to-chromium@1.4.633: {}
 
-  electron-to-chromium@1.4.807: {}
+  electron-to-chromium@1.4.810: {}
 
   emmet@2.4.6:
     dependencies:
@@ -4069,7 +4070,7 @@ snapshots:
 
   is-buffer@2.0.5: {}
 
-  is-core-module@2.13.1:
+  is-core-module@2.14.0:
     dependencies:
       hasown: 2.0.2
 
@@ -4919,7 +4920,7 @@ snapshots:
 
   resolve@1.22.8:
     dependencies:
-      is-core-module: 2.13.1
+      is-core-module: 2.14.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
@@ -5035,9 +5036,9 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shiki@1.7.0:
+  shiki@1.9.0:
     dependencies:
-      '@shikijs/core': 1.7.0
+      '@shikijs/core': 1.9.0
 
   signal-exit@3.0.7: {}
 
