@@ -16,10 +16,10 @@ importers:
         version: 3.6.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.3(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1))
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.11.4(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3))(tailwindcss@3.4.4)
+        version: 5.1.0(astro@4.11.5(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3))(tailwindcss@3.4.4)
       astro:
         specifier: ^4.10.2
-        version: 4.11.4(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3)
+        version: 4.11.5(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3)
       astro-icon:
         specifier: ^1.1.0
         version: 1.1.0
@@ -79,9 +79,6 @@ packages:
 
   '@astrojs/compiler@1.8.2':
     resolution: {integrity: sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==}
-
-  '@astrojs/compiler@2.8.0':
-    resolution: {integrity: sha512-yrpD1WRGqsJwANaDIdtHo+YVjvIOFAjC83lu5qENIgrafwZcJgSXDuwVMXOgok4tFzpeKLsFQ6c3FoUdloLWBQ==}
 
   '@astrojs/compiler@2.8.1':
     resolution: {integrity: sha512-NGfPAgU/9rvDEwsXu82RI1AxiivaxtEYBK9saW1f+2fTHUUqCJQ27HYtb2akG2QxCmFikgZ9zk26BEWgiHho1Q==}
@@ -765,11 +762,6 @@ packages:
   '@vscode/l10n@0.0.18':
     resolution: {integrity: sha512-KYSIHVmslkaCDyw013pphY+d7x1qV8IZupYfeIfzNA+nsaWHbn5uPuQRvdRFsa9zFzGeudPuoGoZ1Op4jrJXIQ==}
 
-  acorn@8.12.0:
-    resolution: {integrity: sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-
   acorn@8.12.1:
     resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
     engines: {node: '>=0.4.0'}
@@ -823,8 +815,8 @@ packages:
   astro-icon@1.1.0:
     resolution: {integrity: sha512-Nksc09p7UuHeMcPNS9w1pKqRw3+wEmmh0A3FJW+FNXvqaeWI4RLvD1MCWErpY3Z5Cvad317rvLdik/Hg8GEk8Q==}
 
-  astro@4.11.4:
-    resolution: {integrity: sha512-jSCnPD+r4MO5Pxl04XfCydzZiL/p70q1ddYind02JDGQDLlps4d2s/AfT/7be12gf1PpR13ACcvO6aJFUIVQXA==}
+  astro@4.11.5:
+    resolution: {integrity: sha512-TCRhuaLwrxwMhS8S1GG+ZTdrAXigX9C8E/YUTs/r2t+owHxDgwl86IV9xH1IHrCPoqhK6civyAQNOT+GKmkb0A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1552,9 +1544,9 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
-  lru-cache@10.2.2:
-    resolution: {integrity: sha512-9hp3Vp2/hFQUiIwKo8XCeFVnrg8Pk3TYNPIR7tJADKi5YfcF7vEaK7avFHTlSy3kOKYaJQaalfEo6YuXdceBOQ==}
-    engines: {node: 14 || >=16.14}
+  lru-cache@10.3.1:
+    resolution: {integrity: sha512-9/8QXrtbGeMB6LxwQd4x1tIMnsmUxMvIH/qWGsccz6bt9Uln3S+sgAaqfQNhbGA8ufzs2fHuP/yqapGgP9Hh2g==}
+    engines: {node: '>=18'}
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
@@ -2619,15 +2611,13 @@ snapshots:
 
   '@astrojs/compiler@1.8.2': {}
 
-  '@astrojs/compiler@2.8.0': {}
-
   '@astrojs/compiler@2.8.1': {}
 
   '@astrojs/internal-helpers@0.4.1': {}
 
   '@astrojs/language-server@2.10.0(prettier-plugin-astro@0.14.0)(prettier@3.3.2)(typescript@5.5.3)':
     dependencies:
-      '@astrojs/compiler': 2.8.0
+      '@astrojs/compiler': 2.8.1
       '@jridgewell/sourcemap-codec': 1.4.15
       '@volar/kit': 2.2.4(typescript@5.5.3)
       '@volar/language-core': 2.2.4
@@ -2688,9 +2678,9 @@ snapshots:
       - supports-color
       - vite
 
-  '@astrojs/tailwind@5.1.0(astro@4.11.4(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3))(tailwindcss@3.4.4)':
+  '@astrojs/tailwind@5.1.0(astro@4.11.5(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3))(tailwindcss@3.4.4)':
     dependencies:
-      astro: 4.11.4(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3)
+      astro: 4.11.5(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3)
       autoprefixer: 10.4.16(postcss@8.4.33)
       postcss: 8.4.33
       postcss-load-config: 4.0.2(postcss@8.4.33)
@@ -3338,8 +3328,6 @@ snapshots:
 
   '@vscode/l10n@0.0.18': {}
 
-  acorn@8.12.0: {}
-
   acorn@8.12.1: {}
 
   ansi-align@3.0.1:
@@ -3389,7 +3377,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@4.11.4(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3):
+  astro@4.11.5(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3):
     dependencies:
       '@astrojs/compiler': 2.8.1
       '@astrojs/internal-helpers': 0.4.1
@@ -4205,7 +4193,7 @@ snapshots:
     dependencies:
       js-tokens: 4.0.0
 
-  lru-cache@10.2.2: {}
+  lru-cache@10.3.1: {}
 
   lru-cache@5.1.1:
     dependencies:
@@ -4567,7 +4555,7 @@ snapshots:
 
   mlly@1.7.0:
     dependencies:
-      acorn: 8.12.0
+      acorn: 8.12.1
       pathe: 1.1.2
       pkg-types: 1.1.0
       ufo: 1.5.3
@@ -4695,7 +4683,7 @@ snapshots:
 
   path-scurry@1.11.1:
     dependencies:
-      lru-cache: 10.2.2
+      lru-cache: 10.3.1
       minipass: 7.1.2
 
   path-to-regexp@6.2.2: {}
