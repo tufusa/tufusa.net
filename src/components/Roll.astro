@@ -15,8 +15,7 @@ const { durationMs, segmentNumber, class: className } = Astro.props;
         <div
           class={`
             float-start w-full
-            -translate-x-full animate-roll
-            text-right
+            translate-x-full animate-roll
             ${i < segmentNumber - 1 ? 'mb-[-100%]' : ''}
           `}
           style={{
