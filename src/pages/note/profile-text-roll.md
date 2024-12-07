@@ -81,7 +81,7 @@ theme: {
 3. もう1個増やす
 
 ```diff
-<div class="w-full bg-gray-800">
+ <div class="w-full bg-gray-800">
    <div class="w-full animate-roll bg-gray-600 translate-x-full [animation-duration:16s]">
      まもなく6番線に電車がまいります
    </div>
@@ -104,7 +104,7 @@ theme: {
 
 ```diff
  <div class="w-full bg-gray-800 overflow-hidden">
-    <div class="w-full animate-roll bg-gray-600 translate-x-full [animation-duration:16s]">
+   <div class="w-full animate-roll bg-gray-600 translate-x-full [animation-duration:16s]">
      まもなく6番線に電車がまいります
    </div>
 -  <div class="w-full animate-roll bg-gray-600 translate-x-full [animation-duration:16s]">
@@ -128,8 +128,8 @@ floatとネガティブマージンを使用します。巻き添えを食らっ
 
 ```diff
  <div class="w-full bg-gray-800">
--   <div class="w-full animate-roll bg-gray-600 translate-x-full [animation-duration:16s]">
-+   <div class="float-start w-full mb-[-100%] animate-roll bg-gray-600 translate-x-full [animation-duration:16s]">
+-  <div class="w-full animate-roll bg-gray-600 translate-x-full [animation-duration:16s]">
++  <div class="float-start w-full mb-[-100%] animate-roll bg-gray-600 translate-x-full [animation-duration:16s]">
      まもなく6番線に電車がまいります
    </div>
 -  <div class="w-full animate-roll bg-gray-600 translate-x-full [animation-duration:16s] [animation-delay:8s]">
@@ -156,8 +156,8 @@ floatとネガティブマージンを使用します。巻き添えを食らっ
    <div class="float-start w-full mb-[-100%] animate-roll bg-gray-600 translate-x-full [animation-duration:16s]">
      まもなく6番線に電車がまいります
    </div>
-  <div class="float-start w-full animate-roll bg-gray-600 translate-x-full [animation-duration:16s] [animation-delay:8s]">
-     まもなく6番線に電車がまいります
+   <div class="float-start w-full animate-roll bg-gray-600 translate-x-full [animation-duration:16s] [animation-delay:8s]">
+      まもなく6番線に電車がまいります
    </div>
  </div>
 ```
