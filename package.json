@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier --write \"src/**/*.{astro,tsx}\"",
+    "check": "prettier --check \"src/**/*.{astro,tsx}\" && astro check"
   },
   "packageManager": "pnpm@9.14.4",
   "dependencies": {
