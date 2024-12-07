@@ -39,6 +39,15 @@ export default {
         urbanist: ['Urbanist', 'sans-serif'],
         'shippori-mincho': ['"Shippori Mincho"', 'sans-serif'],
       },
+      animation: {
+        roll: 'roll linear infinite',
+      },
+      keyframes: {
+        roll: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
     },
   },
   plugins: [],

@@ -4,6 +4,7 @@ import ProfileContent from '../components/ProfileContent.astro';
 import ProfileListItem from '../components/ProfileListItem.astro';
 import ProfileLink from '../components/ProfileLink.astro';
 import { Icon } from 'astro-icon/components';
+import Roll from '../components/Roll.astro';
 ---
 
 <MainLayout title="Profile | tufusa" description="tufusaのプロフィール">
@@ -20,13 +21,18 @@ import { Icon } from 'astro-icon/components';
         <p class="font-serif text-lg text-gray-400 lg:text-xl">[t͡sɯ̹̽ɸɯ̹̽sä]</p>
       </div>
     </div>
-    <ProfileContent title="">tufusaです。いろんなことをしています。</ProfileContent>
+    <ProfileContent title="">tufusaです。いろんなことを広く浅くやっています。</ProfileContent>
     <ProfileContent title="Like">
-      <ProfileListItem title="数学" />
-      <ProfileListItem title="開発" />
-      <ProfileListItem title="競プロ" />
-      <ProfileListItem title="謎解き" />
-      <ProfileListItem title="ゲーム" />
+      <Roll durationMs={16000} segmentNumber={2} class="text-xl">
+        {
+          ['数学', '開発', '競プロ', '謎解き', 'ゲーム']
+            .flatMap((v): astroHTML.JSX.HTMLAttributes[] => [
+              v,
+              <span class="text-main">{' / '}</span>,
+            ])
+            .slice(0, -1)
+        }
+      </Roll>
     </ProfileContent>
     <ProfileContent title="Tech">
       <ProfileListItem title="[Lang] Ruby" />

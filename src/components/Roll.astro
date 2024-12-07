@@ -1,0 +1,32 @@
+---
+export interface Props {
+  durationMs: number;
+  segmentNumber: number;
+  class?: string;
+}
+
+const { durationMs, segmentNumber, class: className } = Astro.props;
+---
+
+<div class={`w-full overflow-hidden ${className ?? ''}`}>
+  {
+    new Array(segmentNumber).fill(null).map(
+      (_, i): astroHTML.JSX.HTMLAttributes => (
+        <div
+          class={`
+            float-start w-full
+            -translate-x-full animate-roll
+            text-right
+            ${i < segmentNumber - 1 ? 'mb-[-100%]' : ''}
+          `}
+          style={{
+            'animation-duration': `${durationMs}ms`,
+            'animation-delay': `${i * (durationMs / segmentNumber)}ms`,
+          }}
+        >
+          <slot />
+        </div>
+      ),
+    )
+  }
+</div>
