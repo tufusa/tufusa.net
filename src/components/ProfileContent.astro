@@ -1,12 +1,12 @@
 ---
 export interface Props {
-  title: string;
+  title?: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<div class="w-full">
+<div class="w-full" id={title}>
   <p class="w-fit border-r-2 border-main pr-2 font-urbanist text-3xl">{title}</p>
   <div class="mt-1 text-base font-light text-gray-200 lg:text-xl">
     <slot />
