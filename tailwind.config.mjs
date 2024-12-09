@@ -7,11 +7,20 @@ export default {
         main: '#FF67A5',
         back: '#121222',
       },
+      width: {
+        screen: ["100vw", "100dvw"]
+      },
       height: {
         screen: ['100vh', '100dvh'],
       },
+      minWidth: {
+        screen: ['100vw', '100dvw'],
+      },
       minHeight: {
         screen: ['100vh', '100dvh'],
+      },
+      maxWidth: {
+        screen: ['100vw', '100dvw'],
       },
       maxHeight: {
         screen: ['100vh', '100dvh'],
