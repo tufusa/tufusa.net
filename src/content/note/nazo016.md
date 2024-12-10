@@ -1,8 +1,7 @@
 ---
-layout: ../../layouts/NoteLayout.astro
 title: "謎016"
 description: "謎016 | tufusaのノート"
-date: 2024/06/05
+date: 2024-06-05
 ---
 
 ## 謎016

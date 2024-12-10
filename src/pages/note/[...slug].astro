@@ -1,0 +1,26 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import NoteLayout from '../../layouts/NoteLayout.astro';
+
+export const getStaticPaths = (async () => {
+  const notes = await getCollection('note');
+  return notes
+    .sort((note) => note.data.date.getTime())
+    .map((note, i) => ({
+      params: { slug: note.slug },
+      props: {
+        note,
+        prev: i > 0 ? notes.at(i - 1) : undefined,
+        next: i < notes.length - 1 ? notes[i + 1] : undefined,
+      },
+    }));
+}) satisfies GetStaticPaths;
+
+const { note, prev, next } = Astro.props;
+const { Content } = await note.render();
+---
+
+<NoteLayout frontmatter={note.data} prev={prev} next={next}>
+  <Content />
+</NoteLayout>

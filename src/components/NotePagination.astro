@@ -1,0 +1,19 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  prev?: CollectionEntry<'note'>;
+  next?: CollectionEntry<'note'>;
+}
+
+const { prev, next } = Astro.props;
+---
+
+<div class="flex w-full content-center gap-1 text-base">
+  <div class="flex-1 text-left">
+    {prev && <a href={`/note/${prev.slug}`}>&lt; {prev.data.title}</a>}
+  </div>
+  <div class="flex-1 text-right">
+    {next && <a href={`/note/${next.slug}`}>{next.data.title} &gt;</a>}
+  </div>
+</div>

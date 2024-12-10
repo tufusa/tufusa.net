@@ -1,8 +1,7 @@
 ---
-layout: ../../layouts/NoteLayout.astro
 title: "Hello, World!"
 description: "Hello, World! | tufusaのノート"
-date: 2024/05/31
+date: 2024-05-31
 ---
 
 ## Hello, World!

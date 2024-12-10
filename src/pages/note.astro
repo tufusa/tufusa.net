@@ -1,12 +1,8 @@
 ---
-import MainLayout from '../../layouts/MainLayout.astro';
+import { getCollection } from 'astro:content';
+import MainLayout from '../layouts/MainLayout.astro';
 
-interface Frontmatter {
-  title: string;
-  date: string;
-}
-
-const notes = await Astro.glob<Frontmatter>('./*.md');
+const notes = await getCollection('note');
 ---
 
 <MainLayout title="Note | tufusa" description="tufusaのノート">
@@ -15,15 +11,19 @@ const notes = await Astro.glob<Frontmatter>('./*.md');
     <div class="flex flex-col">
       {
         notes
-          .sort((note) => -Date.parse(note.frontmatter.date))
+          .sort((note) => -note.data.date)
           .map((note) => (
             <div class="flex gap-2">
-              <span class="text-slate-500">{note.frontmatter.date}</span>
+              <span class="text-slate-500">
+                {note.data.date.toLocaleDateString('ja-JP', {
+                  dateStyle: 'medium',
+                })}
+              </span>
               <a
-                href={note.url}
+                href={`/note/${note.slug}`}
                 class="text-main underline decoration-from-font hover:no-underline"
               >
-                {note.frontmatter.title}
+                {note.data.title}
               </a>
             </div>
           ))

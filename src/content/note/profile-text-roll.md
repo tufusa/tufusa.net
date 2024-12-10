@@ -1,8 +1,7 @@
 ---
-layout: ../../layouts/NoteLayout.astro
 title: プロフィールのテキストがロールするようになりました
 description: プロフィールのテキストがロールするようになりました | tufusaのノート
-date: 2024/12/07
+date: 2024-12-07
 ---
 
 ## Q. なんで？
