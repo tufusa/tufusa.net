@@ -1,17 +1,21 @@
 ---
+import type { CollectionEntry } from 'astro:content';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import BaseLayout from './BaseLayout.astro';
+import NotePagination from '../components/NotePagination.astro';
 
 export interface Props {
   frontmatter: {
     title: string;
     description: string;
-    date: string;
+    date: Date;
   };
+  prev?: CollectionEntry<'note'>;
+  next?: CollectionEntry<'note'>;
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, prev, next } = Astro.props;
 const image = undefined;
 ---
 
@@ -35,9 +39,15 @@ const image = undefined;
       [&_td]:border [&_td]:border-slate-600 [&_td]:px-4 [&_td]:py-1.5
       [&_th]:border [&_th]:border-slate-600 [&_th]:bg-slate-800 [&_th]:px-4 [&_th]:py-1.5"
     >
-      <p><h1>{frontmatter.title}</h1></p>
-      <p class="text-slate-500">{frontmatter.date}</p>
+      <NotePagination prev={prev} next={next} />
+      <hr />
+      <h1>{frontmatter.title}</h1>
+      <p class="text-slate-500">
+        {frontmatter.date.toLocaleDateString('ja-JP', { dateStyle: 'medium' })}
+      </p>
       <slot />
+      <hr />
+      <NotePagination prev={prev} next={next} />
     </article>
   </div>
   <Footer />
