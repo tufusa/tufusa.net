@@ -6,7 +6,7 @@ import NoteLayout from '../../layouts/NoteLayout.astro';
 export const getStaticPaths = (async () => {
   const notes = await getCollection('note');
   return notes
-    .sort((note) => note.data.date.getTime())
+    .sort((a, b) => a.data.date.getTime() - b.data.date.getTime())
     .map((note, i) => ({
       params: { slug: note.slug },
       props: {

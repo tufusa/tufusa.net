@@ -11,7 +11,7 @@ const notes = await getCollection('note');
     <div class="flex flex-col">
       {
         notes
-          .sort((note) => -note.data.date)
+          .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
           .map((note) => (
             <div class="flex gap-2">
               <span class="text-slate-500">
