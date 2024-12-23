@@ -11,7 +11,7 @@
     "format": "prettier --write \"src/**/*.{astro,tsx}\"",
     "check": "prettier --check \"src/**/*.{astro,tsx}\" && astro check"
   },
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.15.1",
   "dependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/react": "4.1.1",
