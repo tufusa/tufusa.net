@@ -24,7 +24,7 @@
   "devDependencies": {
     "typescript": "5.7.3",
     "tailwindcss": "3.4.17",
-    "@iconify-json/mdi": "1.2.2",
+    "@iconify-json/mdi": "1.2.3",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
     "prettier": "3.4.2",
