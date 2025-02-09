@@ -8,7 +8,7 @@ export default {
         back: '#121222',
       },
       width: {
-        screen: ["100vw", "100dvw"]
+        screen: ['100vw', '100dvw'],
       },
       height: {
         screen: ['100vh', '100dvh'],
@@ -53,8 +53,8 @@ export default {
       },
       keyframes: {
         roll: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '0%': { translate: '100%' },
+          '100%': { translate: '-100%' },
         },
       },
     },

@@ -15,20 +15,20 @@
   "dependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/react": "4.2.0",
-    "@astrojs/tailwind": "6.0.0",
     "astro": "5.2.5",
     "astro-icon": "1.1.5",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
   "devDependencies": {
-    "typescript": "5.7.3",
-    "tailwindcss": "4.0.3",
     "@iconify-json/mdi": "1.2.3",
+    "@tailwindcss/vite": "^4.0.5",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
     "prettier": "3.4.2",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "0.6.11"
+    "prettier-plugin-tailwindcss": "0.6.11",
+    "tailwindcss": "4.0.3",
+    "typescript": "5.7.3"
   }
 }

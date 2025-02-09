@@ -1,5 +1,6 @@
 ---
 import '../assets/index.css';
+import '../assets/tailwind.css';
 
 export interface Props {
   title: string;
@@ -34,7 +35,7 @@ const { title, description, image } = Astro.props;
       rel="stylesheet"
     />
   </head>
-  <body class="flex min-h-screen flex-col items-center bg-back font-sans text-white">
+  <body class="bg-back flex min-h-screen flex-col items-center font-sans text-white">
     <slot />
   </body>
 </html>
