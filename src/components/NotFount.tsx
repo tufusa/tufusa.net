@@ -36,7 +36,7 @@ export const NotFound = () => {
   return (
     <main className="flex w-full flex-1 flex-col items-center justify-center">
       <div
-        className="select-none px-10 font-poiret-one text-9xl lg:text-[10rem]"
+        className="px-10 font-poiret-one text-9xl select-none lg:text-[10rem]"
         ref={(element) => {
           if (!isSolved) return;
 
@@ -56,7 +56,7 @@ export const NotFound = () => {
           </span>
         )}
       </div>
-      <div className="select-none font-urbanist text-2xl text-main lg:text-3xl">
+      <div className="font-urbanist text-2xl text-main select-none lg:text-3xl">
         {transitionState != 'end' && (
           <span onClick={transitionState == 'none' ? activate : undefined} ref={triggerRef}>
             Not&nbsp;

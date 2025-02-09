@@ -79,7 +79,7 @@ theme: {
   </div>
 </div>
 
-1. もう1個増やす
+3. もう1個増やす
 
 ```diff
  <div class="w-full bg-gray-800">
