@@ -2,6 +2,8 @@
 
 export default {
   plugins: ['prettier-plugin-astro', 'prettier-plugin-tailwindcss'],
+  tailwindStylesheet: "./src/assets/tailwind.css",
+  tailwindConfig: './tailwind.config.mjs',
   overrides: [
     {
       files: '*.astro',

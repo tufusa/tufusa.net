@@ -41,8 +41,10 @@ A. さあ…………
 親と子の幅を同じにしておくことで、`100% ~ -100%`でちょうど右端から左端まで移動するようになります。  
 アニメーション`animate-roll`は[Tailwind CSSのドキュメント](https://tailwindcss.com/docs/animation#customizing-your-theme)を参考にスタイル拡張で定義します。
 
-<details class="[&>pre]:ml-4">
+<details class="[&>:not(summary)]:ml-4">
 <summary><code>animate-roll</code>の定義</summary>
+
+**(2025/02/09追記)** Tailwind v4で`translate-*`系の実装が`transform`から`translate`に変わったので、アニメーションもそれに合わせて`transform: 'translateX(100%)'`から`translate: '100%'`に修正しました。これをしないと、別プロパティなので置換ではなく合算されてしまい開始位置が`200%`になってしまうためです。
 
 ```ts
 theme: {
@@ -52,8 +54,8 @@ theme: {
     },
     keyframes: {
       roll: {
-        '0%': { transform: 'translateX(100%)' },
-        '100%': { transform: 'translateX(-100%)' },
+        '0%': { translate: '100%' },
+        '100%': { translate: '-100%' },
       },
     },
   }
