@@ -28,6 +28,7 @@ const { title, description, image } = Astro.props;
     <meta property="og:image" content={new URL(image ?? '/favicon.png', Astro.url)} />
     <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#FF67A5" />
+    <meta name="robots" content="noai, noimageai" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
