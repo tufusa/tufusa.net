@@ -23,8 +23,8 @@
   "devDependencies": {
     "@iconify-json/mdi": "1.2.3",
     "@tailwindcss/vite": "^4.0.5",
-    "@types/react": "19.0.9",
-    "@types/react-dom": "19.0.3",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
     "prettier": "3.5.1",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.6.11",
