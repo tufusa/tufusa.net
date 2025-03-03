@@ -1,2 +1,7 @@
 @import 'tailwindcss';
 @config "../../tailwind.config.mjs";
+
+@utility budoux {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
