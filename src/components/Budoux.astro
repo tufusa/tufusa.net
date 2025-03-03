@@ -1,0 +1,8 @@
+---
+import { budoux } from '../utils/budoux';
+
+const slot = await Astro.slots.render('default');
+const html = budoux(slot);
+---
+
+<Fragment set:html={html} />

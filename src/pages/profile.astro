@@ -5,14 +5,15 @@ import ProfileListItem from '../components/ProfileListItem.astro';
 import ProfileLink from '../components/ProfileLink.astro';
 import { Icon } from 'astro-icon/components';
 import Roll from '../components/Roll.astro';
+import BudouX from '../components/Budoux.astro';
 ---
 
 <MainLayout title="Profile | tufusa" description="tufusaのプロフィール">
   <main class="mt-8 flex w-4/5 max-w-xl flex-1 flex-col gap-10">
     <div class="flex h-fit w-full flex-wrap items-center gap-8">
       <div
-        class="flex size-32 items-center justify-center
-          rounded-full border border-slate-600 bg-black"
+        class="flex aspect-square size-32 items-center
+          justify-center rounded-full border border-slate-600 bg-black"
       >
         <Icon name="threeEyes" class="size-1/2" />
       </div>
@@ -21,7 +22,9 @@ import Roll from '../components/Roll.astro';
         <p class="font-serif text-lg text-gray-400 lg:text-xl">[t͡sɯ̹̽ɸɯ̹̽sä]</p>
       </div>
     </div>
-    <ProfileContent>tufusaです。いろんなことを広く浅くやっています。</ProfileContent>
+    <ProfileContent>
+      <BudouX>tufusaです。いろんなことを広く浅くやっています。</BudouX>
+    </ProfileContent>
     <ProfileContent title="Like">
       <Roll durationMs={16000} segmentNumber={2} class="lg:text-xl">
         {

@@ -1,4 +1,6 @@
 ---
+import Budoux from './Budoux.astro';
+
 export interface Props {
   title: string;
   content?: string;
@@ -11,5 +13,5 @@ const { title, content } = Astro.props;
     before:font-normal
     before:text-main
     before:content-['-']">
-  {title}{content && <span class="text-gray-400">……</span>}{content}
+  {title}{content && <span class="text-gray-400">……</span>}<Budoux>{content}</Budoux>
 </div>
