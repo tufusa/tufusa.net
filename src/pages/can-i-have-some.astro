@@ -21,6 +21,7 @@ if (Astro.request.method === 'POST') {
   try {
     const form = await Astro.request.formData();
     const input = form.get('input');
+    console.log({ input, env: import.meta.env });
 
     if (typeof input == 'string') {
       data.input = input;
