@@ -1,0 +1,19 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { ImaTeapot } from '../components/ImaTeapot';
+
+export const prerender = false;
+
+const cookie = Astro.cookies.get(import.meta.env.CAN_I_HAVE_SOME_KEY);
+if (cookie?.value !== import.meta.env.CAN_I_HAVE_SOME_WRONG) {
+  return new Response(null, { status: 404 });
+}
+
+Astro.response.status = 418;
+Astro.response.statusText = "I'm a teapot";
+---
+
+<MainLayout title="Can I have some | tufusa" description="Can I have some">
+  <meta name="robots" content="noindex, nofollow" slot="head" />
+  <ImaTeapot client:load />
+</MainLayout>

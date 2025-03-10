@@ -1,0 +1,60 @@
+---
+import { Icon } from 'astro-icon/components';
+import MainLayout from '../layouts/MainLayout.astro';
+
+export const prerender = false;
+
+const redirect = (path: string): Response => {
+  Astro.cookies.set(import.meta.env.CAN_I_HAVE_SOME_KEY, import.meta.env.CAN_I_HAVE_SOME_WRONG, {
+    sameSite: 'strict',
+    secure: true,
+    maxAge: 1,
+    httpOnly: true,
+  });
+  return Astro.redirect(path);
+};
+
+const data = {
+  input: '',
+};
+if (Astro.request.method === 'POST') {
+  try {
+    const form = await Astro.request.formData();
+    const input = form.get('input');
+
+    if (typeof input == 'string') {
+      data.input = input;
+    }
+    if (input === import.meta.env.CAN_I_HAVE_SOME_WRONG) {
+      return redirect('/418');
+    }
+  } catch (error) {
+    console.error(error);
+  }
+}
+---
+
+<MainLayout title="Can I have some | tufusa" description="Can I have some">
+  <meta name="robots" content="noindex, nofollow" slot="head" />
+  <main class="flex w-full flex-1 flex-col items-center justify-center">
+    <form method="post" class="relative flex gap-4 text-xl">
+      <p class="text-[#c0ffee] lg:text-2xl">
+        Can I have some
+        <input
+          name="input"
+          class="field-sizing-content max-w-[56.45px] min-w-4 animate-pulse border-b outline-0 lg:max-w-[67.74px]"
+        /> ?
+      </p>
+      <button type="submit">
+        <Icon name="mdi:send" class="text-[#c0ffee]" />
+      </button>
+    </form>
+    {
+      data.input === import.meta.env.CAN_I_HAVE_SOME_CORRECT && (
+        <div class="absolute bottom-1/4">
+          <Icon name="mdi:tea" class="inline-block text-2xl" />
+        </div>
+      )
+    }
+  </main>
+</MainLayout>
