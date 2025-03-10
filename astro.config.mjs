@@ -22,4 +22,12 @@ export default defineConfig({
     plugins: [tailwind()],
   },
   adapter: cloudflare(),
+  // for react19 + cloudflare adapter
+  vite: {
+    resolve: {
+      alias: import.meta.env.PROD && {
+        'react-dom/server': 'react-dom/server.edge',
+      },
+    },
+  },
 });
