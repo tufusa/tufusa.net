@@ -1,11 +1,11 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, getViteConfig, mergeConfig } from 'astro/config';
 import tailwind from '@tailwindcss/vite';
 import react from '@astrojs/react';
 import icon from 'astro-icon';
 import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
-export default defineConfig({
+const config = defineConfig({
   integrations: [
     icon({
       iconDir: 'src/assets',
@@ -22,12 +22,17 @@ export default defineConfig({
     plugins: [tailwind()],
   },
   adapter: cloudflare(),
-  // for react19 + cloudflare adapter
-  vite: {
-    resolve: {
-      alias: import.meta.env.PROD && {
-        'react-dom/server': 'react-dom/server.edge',
-      },
-    },
-  },
+});
+
+//for react19 + cloudflare adapter
+export default mergeConfig(config, {
+  vite: import.meta.env.PROD
+    ? {
+        resolve: {
+          alias: {
+            'react-dom/server': 'react-dom/server.edge',
+          },
+        },
+      }
+    : {},
 });
