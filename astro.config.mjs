@@ -1,4 +1,4 @@
-import { defineConfig, getViteConfig, mergeConfig } from 'astro/config';
+import { defineConfig, mergeConfig } from 'astro/config';
 import tailwind from '@tailwindcss/vite';
 import react from '@astrojs/react';
 import icon from 'astro-icon';
