@@ -1,8 +1,12 @@
 ---
 import { NotFound } from '../components/NotFound';
 import MainLayout from '../layouts/MainLayout.astro';
+
+Astro.response.status = 404;
+Astro.response.statusText = 'Not Found';
 ---
 
 <MainLayout title="404 | tufusa" description="Not found">
+  <meta name="robots" content="noindex, nofollow" slot="head" />
   <NotFound client:load />
 </MainLayout>

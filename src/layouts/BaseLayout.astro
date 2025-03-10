@@ -35,6 +35,7 @@ const { title, description, image } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Urbanist:wght@300&family=Noto+Sans+JP:wght@300..400&family=Shippori+Mincho&display=swap"
       rel="stylesheet"
     />
+    <slot name="head" />
   </head>
   <body class="flex min-h-screen flex-col items-center bg-back font-sans text-white">
     <slot />
