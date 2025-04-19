@@ -15,8 +15,8 @@ importers:
         specifier: 4.2.4
         version: 4.2.4(@types/node@22.10.0)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(jiti@2.4.2)(lightningcss@1.29.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(terser@5.31.1)(yaml@2.6.1)
       astro:
-        specifier: 5.7.1
-        version: 5.7.1(@types/node@22.10.0)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.34.9)(terser@5.31.1)(typescript@5.8.3)(yaml@2.6.1)
+        specifier: 5.7.2
+        version: 5.7.2(@types/node@22.10.0)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.34.9)(terser@5.31.1)(typescript@5.8.3)(yaml@2.6.1)
       astro-icon:
         specifier: 1.1.5
         version: 1.1.5
@@ -877,8 +877,8 @@ packages:
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
 
-  astro@5.7.1:
-    resolution: {integrity: sha512-5nqSQ7prw3yR6o/ip0TfdQpYSadKADEkyIdGVY8V8FOZIl806GfRhOzNYQnjqyw94mEUJ5067MBeYjdCvf2d7A==}
+  astro@5.7.2:
+    resolution: {integrity: sha512-h/+MjrirU2xT+khkxvwPxE7c1O4nxzVtuSnGIqx+3dtrmUoxJvnNeIBnO7ED0mWzo6ClZ4aVBQj63M7U47anLg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3362,7 +3362,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@5.7.1(@types/node@22.10.0)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.34.9)(terser@5.31.1)(typescript@5.8.3)(yaml@2.6.1):
+  astro@5.7.2(@types/node@22.10.0)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.34.9)(terser@5.31.1)(typescript@5.8.3)(yaml@2.6.1):
     dependencies:
       '@astrojs/compiler': 2.11.0
       '@astrojs/internal-helpers': 0.6.1
