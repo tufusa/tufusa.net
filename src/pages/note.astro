@@ -20,7 +20,7 @@ const notes = await getCollection('note');
                 })}
               </span>
               <a
-                href={`/note/${note.slug}`}
+                href={`/note/${note.id}`}
                 class="text-lg text-main underline decoration-from-font hover:no-underline"
               >
                 {note.data.title}
