@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import NoteLayout from '../../layouts/NoteLayout.astro';
 
 export const getStaticPaths = (async () => {
@@ -8,7 +8,7 @@ export const getStaticPaths = (async () => {
   return notes
     .sort((a, b) => a.data.date.getTime() - b.data.date.getTime())
     .map((note, i) => ({
-      params: { slug: note.slug },
+      params: { id: note.id },
       props: {
         note,
         prev: i > 0 ? notes.at(i - 1) : undefined,
@@ -18,7 +18,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { note, prev, next } = Astro.props;
-const { Content } = await note.render();
+const { Content } = await render(note);
 ---
 
 <NoteLayout frontmatter={note.data} prev={prev} next={next}>
