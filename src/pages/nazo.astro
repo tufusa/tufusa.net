@@ -27,7 +27,7 @@ const nazo = await getCollection('nazo').then((collection) => collection.reverse
 
                 <div
                   slot="modal"
-                  class="flex w-xl max-w-dvw flex-col rounded-b-sm bg-back shadow-2xl"
+                  class="flex w-xl max-w-dvw flex-col rounded-b-sm bg-back shadow-2xl starting:opacity-0 duration-200 transition-all"
                 >
                   <Image src={data.src} width={1200} height={900} alt={id} class="bg-gray-800" />
                   <div class="z-10 border-t-2 border-main p-8">
