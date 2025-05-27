@@ -12,6 +12,9 @@ export default defineConfig({
     react(),
   ],
   site: 'https://tufusa.net',
+  image: {
+    domains: ['image.tufusa.net'],
+  },
   markdown: {
     shikiConfig: {
       theme: 'one-dark-pro',

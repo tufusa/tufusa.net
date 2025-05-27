@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../layouts/MainLayout.astro';
+import { Image } from 'astro:assets';
+import { ModalCard } from '../components/ModalCard';
+
+const nazo = await getCollection('nazo').then((collection) => collection.reverse());
+---
+
+<MainLayout title="Nazo | tufusa" description="tufusaの謎">
+  <div class="flex h-full w-full flex-col items-center">
+    <main class="mt-8 flex w-4/5 max-w-6xl flex-1 flex-col items-center gap-10">
+      <div class="my-16 font-shippori-mincho text-3xl text-main lg:text-4xl">謎</div>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-3 lg:gap-16">
+        {
+          nazo.map(({ data, id }) => (
+            <div class="flex flex-col items-center gap-1">
+              <ModalCard client:load>
+                <Image
+                  slot="button"
+                  src={data.src}
+                  width={1200}
+                  height={900}
+                  alt={id}
+                  class="rounded-tr rounded-bl bg-gray-800 shadow-2xl transition-all duration-300 hover:brightness-90"
+                />
+
+                <div
+                  slot="modal"
+                  class="flex w-xl max-w-dvw flex-col rounded-b-sm bg-back shadow-2xl transition-all duration-200 starting:opacity-0"
+                >
+                  <Image src={data.src} width={1200} height={900} alt={id} class="bg-gray-800" />
+                  <div class="z-10 border-t-2 border-main p-8">
+                    <div class="flex gap-3 text-lg">
+                      <p class="font-urbanist text-slate-300">#{data.id}</p>
+                      {data.title}
+                    </div>
+                    {data.description && <p class="text-gray-400">{data.description}</p>}
+                  </div>
+                </div>
+              </ModalCard>
+
+              <div class="z-10 flex gap-3">
+                <p class="font-urbanist text-slate-300">#{data.id}</p>
+                {data.title}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </main>
+  </div>
+</MainLayout>
