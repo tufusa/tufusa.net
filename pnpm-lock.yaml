@@ -15,8 +15,8 @@ importers:
         specifier: 4.4.0
         version: 4.4.0(@types/node@22.10.0)(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(jiti@2.6.1)(lightningcss@1.30.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(terser@5.31.1)(yaml@2.6.1)
       astro:
-        specifier: 5.15.0
-        version: 5.15.0(@types/node@22.10.0)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(terser@5.31.1)(typescript@5.9.3)(yaml@2.6.1)
+        specifier: 5.15.1
+        version: 5.15.1(@types/node@22.10.0)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(terser@5.31.1)(typescript@5.9.3)(yaml@2.6.1)
       astro-icon:
         specifier: 1.1.5
         version: 1.1.5
@@ -906,8 +906,8 @@ packages:
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
 
-  astro@5.15.0:
-    resolution: {integrity: sha512-hPfCc+5BoieeDuFLiGanLMeeFngOuKH/XqgQn4x2ZZW9klpb9PzI4PTuZb4siw5YhOFfeaeQAbgBgzhut8Kvfw==}
+  astro@5.15.1:
+    resolution: {integrity: sha512-VM679M1qxOjGo6q3vKYDNDddkALGgMopG93IwbEXd3Buc2xVLuuPj4HNziNugSbPQx5S6UReMp5uzw10EJN81A==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1516,9 +1516,6 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
-
-  magic-string@0.30.19:
-    resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
@@ -3384,7 +3381,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@5.15.0(@types/node@22.10.0)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(terser@5.31.1)(typescript@5.9.3)(yaml@2.6.1):
+  astro@5.15.1(@types/node@22.10.0)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(terser@5.31.1)(typescript@5.9.3)(yaml@2.6.1):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.7.4
@@ -3418,7 +3415,7 @@ snapshots:
       http-cache-semantics: 4.2.0
       import-meta-resolve: 4.2.0
       js-yaml: 4.1.0
-      magic-string: 0.30.19
+      magic-string: 0.30.21
       magicast: 0.3.5
       mrmime: 2.0.1
       neotraverse: 0.6.18
@@ -4103,10 +4100,6 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
-
-  magic-string@0.30.19:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.5
 
   magic-string@0.30.21:
     dependencies:
