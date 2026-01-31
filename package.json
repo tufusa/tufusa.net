@@ -15,7 +15,7 @@
   "dependencies": {
     "@astrojs/check": "0.9.6",
     "@astrojs/react": "4.4.2",
-    "astro": "5.16.15",
+    "astro": "5.16.16",
     "astro-icon": "1.1.5",
     "react": "19.2.4",
     "react-dom": "19.2.4"
