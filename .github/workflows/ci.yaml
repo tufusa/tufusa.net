@@ -8,19 +8,20 @@ jobs:
   check:
     name: Code Check
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      - run: node -v
       - uses: actions/checkout@v6
+      - name: "Hotfix: setup Node v24 manually"
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: 24
+          package-manager-cache: false
+      - run: node -v
       - name: Setup bun
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-      - run: node -v
       - name: Install dependencies
         run: bun install --frozen-lockfile
-      - run: node -v
       - name: Code check
         run: bun run check
