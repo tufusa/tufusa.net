@@ -4,10 +4,6 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
-env:
-  # TODO: delete this after 2026-06
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   check:
     name: Code Check
@@ -15,6 +11,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+      - name: "Hotfix: setup Node v24 manually"
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - run: node -v
       - name: Setup bun
         uses: oven-sh/setup-bun@v2
         with:
