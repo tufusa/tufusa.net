@@ -14,7 +14,7 @@ jobs:
       - name: "Hotfix: setup Node v24 manually"
         uses: actions/setup-node@v6
         with:
-          node-version-file: 24
+          node-version: 24
           package-manager-cache: false
       - run: node -v
       - name: Setup bun
