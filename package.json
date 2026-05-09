@@ -17,8 +17,8 @@
     "@astrojs/react": "5.0.4",
     "astro": "6.2.2",
     "astro-icon": "1.1.5",
-    "react": "19.2.5",
-    "react-dom": "19.2.5"
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
   },
   "devDependencies": {
     "@iconify-json/mdi": "1.2.3",
