@@ -14,8 +14,8 @@
   "packageManager": "pnpm@11.26.0+sha512.fc0e2bf890b9f983611f1ab68c0637bce914390653699f83c1a78b005ed25f2c81e77920c8fd8eee2ecf0b58b28cdcb00a84d97f69bcf7c56b2f344710238664",
   "dependencies": {
     "@astrojs/check": "0.9.10",
-    "@astrojs/react": "5.0.7",
-    "astro": "6.4.8",
+    "@astrojs/react": "6.0.5",
+    "astro": "7.3.2",
     "astro-icon": "1.2.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"
