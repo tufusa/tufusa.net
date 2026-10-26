@@ -9,25 +9,23 @@ const notes = await getCollection('note');
   <main class="mt-11 flex w-4/5 max-w-xl flex-1 flex-col gap-10">
     <div class="text-3xl font-bold lg:text-4xl">ノート</div>
     <div class="flex flex-col gap-6">
-      {
-        notes
-          .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-          .map((note) => (
-            <div class="flex flex-col">
-              <span class="text-slate-500">
-                {note.data.date.toLocaleDateString('ja-JP', {
-                  dateStyle: 'medium',
-                })}
-              </span>
-              <a
-                href={`/note/${note.id}`}
-                class="text-lg text-main underline decoration-from-font hover:no-underline"
-              >
-                {note.data.title}
-              </a>
-            </div>
-          ))
-      }
+      {notes
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+        .map((note) => (
+          <div class="flex flex-col">
+            <span class="text-slate-500">
+              {note.data.date.toLocaleDateString('ja-JP', {
+                dateStyle: 'medium',
+              })}
+            </span>
+            <a
+              href={`/note/${note.id}`}
+              class="text-lg text-main underline decoration-from-font hover:no-underline"
+            >
+              {note.data.title}
+            </a>
+          </div>
+        ))}
     </div>
   </main>
 </MainLayout>
