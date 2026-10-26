@@ -12,17 +12,15 @@ const { icon, text, to } = Astro.props;
 
 <div>
   <Icon name={icon} class="inline" />
-  {
-    to ? (
-      <a
-        href={to}
-        class="text-main underline decoration-from-font hover:no-underline"
-        target="_blank"
-      >
-        {text}
-      </a>
-    ) : (
-      <span class="text-main">{text}</span>
-    )
-  }
+  {to ? (
+    <a
+      href={to}
+      class="text-main underline decoration-from-font hover:no-underline"
+      target="_blank"
+    >
+      {text}
+    </a>
+  ) : (
+    <span class="text-main">{text}</span>
+  )}
 </div>
