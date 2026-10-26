@@ -5,6 +5,7 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
+  compressHTML: true,
   integrations: [
     icon({
       iconDir: 'src/assets',
